@@ -93,6 +93,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   bundler-audit (~> 0.8)
@@ -106,4 +107,4 @@ DEPENDENCIES
   webmock (~> 3.12)
 
 BUNDLED WITH
-   2.4.14
+   2.4.19
