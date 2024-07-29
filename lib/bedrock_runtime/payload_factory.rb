@@ -16,6 +16,9 @@ require_relative 'payload_builders/meta/llama213b_chat_v1'
 require_relative 'payload_builders/meta/llama270b_chat_v1'
 require_relative 'payload_builders/meta/llama38b_instruct_v1'
 require_relative 'payload_builders/meta/llama370b_instruct_v1'
+require_relative 'payload_builders/meta/llama318b_instruct_v1'
+require_relative 'payload_builders/meta/llama3170b_instruct_v1'
+require_relative 'payload_builders/meta/llama31405b_instruct_v1'
 require_relative 'payload_builders/stability_ai/stable_diffusion_xl_v0'
 require_relative 'payload_builders/stability_ai/stable_diffusion_xl_v1'
 
@@ -68,6 +71,9 @@ module RubyAmazonBedrock
         'meta.llama2-70b-chat-v1' => PayloadBuilders::Meta::Llama270bChatV1,
         'meta.llama3-8b-instruct-v1:0' => PayloadBuilders::Meta::Llama38bInstructV1,
         'meta.llama3-70b-instruct-v1:0' => PayloadBuilders::Meta::Llama370bInstructV1,
+        'meta.llama3-1-8b-instruct-v1:0' => PayloadBuilders::Meta::Llama3170bInstructV1,
+        'meta.llama3-1-70b-instruct-v1:0' => PayloadBuilders::Meta::Llama3170bInstructV1,
+        'meta.llama3-1-405b-instruct-v1:0' => PayloadBuilders::Meta::Llama31405bInstructV1,
         'stability.stable-diffusion-xl-v0' => PayloadBuilders::StabilityAi::StableDiffusionXlV0,
         'stability.stable-diffusion-xl-v1' => PayloadBuilders::StabilityAi::StableDiffusionXlV1
       }
